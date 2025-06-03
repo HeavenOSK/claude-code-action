@@ -121,7 +121,7 @@ runs:
     - name: Run Claude Code
       id: claude-code
       if: steps.prepare.outputs.contains_trigger == 'true'
-      uses: grll/claude-code-base-action@9f0fa5eeca1de34e9be1acf05f244e22e4527ca7 # Latest commit from fork
+      uses: HeavenOSK/claude-code-base-action@3ec2bf1bd6403201872643bd910bd8d4398a38ae # Latest commit from fork
       with:
         prompt_file: /tmp/claude-prompts/claude-prompt.txt
         allowed_tools: ${{ env.ALLOWED_TOOLS }}
